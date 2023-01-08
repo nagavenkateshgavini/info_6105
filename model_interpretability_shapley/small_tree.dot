@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="rounded", color="black", fontname="helvetica"] ;
+edge [fontname="helvetica"] ;
+0 [label="Monthly_Inhand_Salary <= 4626.9\nsquared_error = 17253.9\nsamples = 6724\nvalue = 165.6"] ;
+1 [label="Monthly_Balance <= 248.1\nsquared_error = 4835.6\nsamples = 4462\nvalue = 119.5"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="Monthly_Inhand_Salary <= 2332.4\nsquared_error = 5518.9\nsamples = 708\nvalue = 194.9"] ;
+1 -> 2 ;
+3 [label="squared_error = 1814.0\nsamples = 476\nvalue = 158.5"] ;
+2 -> 3 ;
+4 [label="squared_error = 4569.0\nsamples = 232\nvalue = 272.4"] ;
+2 -> 4 ;
+5 [label="Monthly_Inhand_Salary <= 2313.2\nsquared_error = 3396.2\nsamples = 3754\nvalue = 105.0"] ;
+1 -> 5 ;
+6 [label="squared_error = 1328.5\nsamples = 1922\nvalue = 83.6"] ;
+5 -> 6 ;
+7 [label="squared_error = 4578.9\nsamples = 1832\nvalue = 127.1"] ;
+5 -> 7 ;
+8 [label="Payment_Behaviour <= 1.5\nsquared_error = 29226.3\nsamples = 2262\nvalue = 255.3"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="Annual_Income <= 97576.6\nsquared_error = 5048.8\nsamples = 1077\nvalue = 143.8"] ;
+8 -> 9 ;
+10 [label="squared_error = 3154.8\nsamples = 864\nvalue = 127.9"] ;
+9 -> 10 ;
+11 [label="squared_error = 7490.0\nsamples = 213\nvalue = 210.0"] ;
+9 -> 11 ;
+12 [label="Monthly_Balance <= 410.4\nsquared_error = 29171.5\nsamples = 1185\nvalue = 361.1"] ;
+8 -> 12 ;
+13 [label="squared_error = 27548.2\nsamples = 562\nvalue = 450.5"] ;
+12 -> 13 ;
+14 [label="squared_error = 16660.0\nsamples = 623\nvalue = 279.3"] ;
+12 -> 14 ;
+}
